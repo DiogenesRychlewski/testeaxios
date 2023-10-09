@@ -17,7 +17,7 @@ export function Home() {
         fetch('https://api.github.com/users/DiogenesRychlewski/repos')
             .then(response => response.json())
             .then(data => setRepositories(data))
-    }, [repositories]);
+    }, []);
 
     function handleAddLocalStorage() {
         localStorage.valor = "Local storage adicionado no ano de " + date.getFullYear()

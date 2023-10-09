@@ -13,7 +13,7 @@ jest.mock('react-router', () => ({
     useNavigate: () => mockNavigate
 }))
 
-describe("AsideNav", () => {
+describe("Home", () => {
     it("should render correctly", () => {
         const queryClient = new QueryClient();
         render(
